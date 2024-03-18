@@ -4,10 +4,11 @@
 """
 
 def main():
-    # 이곳에 코드를 작성해주세요!
 
+    num = input("")
+    reversed_num = num[::-1]
+    print(reversed_num)
     return
-
 
 if __name__ == '__main__':
     main()
