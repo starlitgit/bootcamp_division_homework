@@ -4,14 +4,20 @@
 """
 
 def main():
-   num = int(input(""))
+    # 점수 입력 받기
+    score = int(input("점수를 입력하세요: "))
 
-   if(0 <=num< 12):
-    print("AM")
-   else:
-    print("PM")
-
-    return
+    # 점수에 따라 등급 출력
+    if score >= 90:
+        print("A")
+    elif score >= 80:
+        print("B")
+    elif score >= 70:
+        print("C")
+    elif score >= 60:
+        print("D")
+    else:
+        print("F")
 
 if __name__ == '__main__':
     main()
