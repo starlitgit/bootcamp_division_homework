@@ -4,15 +4,14 @@
 """
 
 def main():
-    num = int(input(""))
+    # 시간 입력 받기
+    hour = int(input("시간을 입력하세요 (0부터 23까지): "))
 
-    if(0 <=num< 12):
+    # 입력된 시간이 12시 이전이면 AM 출력, 그렇지 않으면 PM 출력
+    if 0 <= hour < 12:
         print("AM")
     else:
         print("PM")
-
-    return
-
 
 if __name__ == '__main__':
     main()
