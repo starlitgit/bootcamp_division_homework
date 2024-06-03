@@ -4,19 +4,15 @@
 """
 
 def main():
-    num = int(input(""))
+    # 나이와 키 입력 받기
+    age = int(input("나이를 입력하세요: "))
+    height = int(input("키를 입력하세요: "))
 
-    if(100>=num>=90):
-        print("A")
-    elif(90>num>=80):
-        print("B")
-    elif(80>num>=70):
-        print("C")
-    elif(70>num>=60):
-        print("D")
+    # 놀이방 입장 가능 여부 판단
+    if age >= 14 or height >= 160:
+        print("X")
     else:
-        print("F")
-    return
+        print("O")
 
 if __name__ == '__main__':
     main()
