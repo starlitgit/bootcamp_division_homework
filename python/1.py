@@ -5,10 +5,12 @@
 
 def main():
 
-    num = input("")
+  # 세 자리 정수 입력 받기
+    num = input("세 자리 정수를 입력하세요: ")
+    
+    # 입력된 정수를 역순으로 출력
     reversed_num = num[::-1]
-    print(reversed_num)
-    return
+    print("출력:", reversed_num)
 
 if __name__ == '__main__':
     main()
