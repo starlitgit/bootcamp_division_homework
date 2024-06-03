@@ -4,15 +4,14 @@
 """
 
 def main():
+    # 알파벳 문자 하나 입력 받기
+    char = input("알파벳 문자 하나를 입력하세요: ")
 
-    age = int(input(""))
-    height = int(input(""))
-
-    if age >= 14 or height >=160:
-        print("X")
-    else:
+    # 입력된 문자가 모음인지 판단하여 출력
+    if char in ['a', 'e', 'i', 'o', 'u']:
         print("O")
-    return
-
+    else:
+        print("X")
+        
 if __name__ == '__main__':
     main()
