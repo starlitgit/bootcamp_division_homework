@@ -4,10 +4,19 @@
 """
 
 def main():
-    # 이곳에 코드를 작성해주세요!
+    # 양의 정수 n 입력 받기
+    while True:
+        n = int(input("양의 정수를 입력하세요: "))
+        if n > 0:
+            break
+        else:
+            print("X")
 
-    return
+    # 1부터 n까지의 합 계산
+    sum_of_integers = sum(range(1, n + 1))
 
+    # 합 출력
+    print(sum_of_integers)
 
 if __name__ == '__main__':
     main()
