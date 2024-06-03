@@ -4,10 +4,20 @@
 """
 
 def main():
-    # 이곳에 코드를 작성해주세요!
+    # 정수 n 입력 받기
+    n = int(input("정수를 입력하세요 (12 이하): "))
 
-    return
+    # 1부터 n까지의 정수의 합 계산
+    sum_of_integers = sum(range(1, n + 1))
 
+    # n! 계산
+    factorial = 1
+    for i in range(1, n + 1):
+        factorial *= i
+
+    # 결과 출력
+    print(sum_of_integers)
+    print(factorial)
 
 if __name__ == '__main__':
     main()
