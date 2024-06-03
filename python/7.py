@@ -4,16 +4,20 @@
 """
 
 def main():
-    user_input = input("")
+# 연도와 월 입력 받기
+    year = int(input("연도를 입력하세요: "))
+    month = int(input("월을 입력하세요: "))
 
-    if user_input in ['a', 'e', 'i', 'o', 'u']:
-        print("O")
-
+    # 입력한 연도가 윤년인지 판단하여 해당하는 달의 날 수 출력
+    if month in [4, 6, 9, 11]:
+        print("30")
+    elif month == 2:
+        if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+            print("29")
+        else:
+            print("28")
     else:
-        print("X")
-
-    return
-
+        print("31")
 
 if __name__ == '__main__':
     main()
