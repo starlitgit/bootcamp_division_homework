@@ -5,13 +5,13 @@
 
 def main():
 
-    age = int(input(""))
+    # 나이 입력 받기
+    age = int(input("나이를 입력하세요: "))
     
+    # 나이에 따라 할인 적용 여부 결정
     if age >= 61:
-        print("DISCOUNTBOARD")
-    else:
-        print("BOARD")
-    return
+        print("DISCOUNT")
+    print("BOARD")
 
 if __name__ == '__main__':
     main()
